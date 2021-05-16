@@ -140,8 +140,8 @@ final class GDO_AccountAccess extends GDO
 				html($_SERVER['HTTP_USER_AGENT']),
 				$_SERVER['REMOTE_ADDR'],
 				gethostbyaddr($_SERVER['REMOTE_ADDR']),
-				GDT_Link::anchor(url('Account', 'Access')),
-				GDT_Link::anchor(url('Account', 'Form')),
+				GDT_Link::anchor(url('Security', 'Access')),
+				GDT_Link::anchor(url('Account', 'Settings', '&module=Security')),
 			)));
 			$mail->sendToUser($user);
 		}
